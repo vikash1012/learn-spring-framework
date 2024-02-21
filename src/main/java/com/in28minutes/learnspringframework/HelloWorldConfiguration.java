@@ -13,7 +13,7 @@ public class HelloWorldConfiguration {
 		return "Vikash";
 	}
 
-	@Bean
+	@Bean(name="permanentAddress") //The name attributes is used to set the custom name of the bean
 	public Address address() {
 		return new Address("Kolhachak", "Masaurhi");
 	}

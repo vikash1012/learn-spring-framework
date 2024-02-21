@@ -12,7 +12,9 @@ public class App02HelloWorldSpring {
 		//  HelloWorldConfigrationClass- @Configuration
 		//name method- @Bean
 		System.out.println(context.getBean("name"));
-		System.out.println(context.getBean("address"));
+		System.out.println(context.getBean("permanentAddress")); //bean can we retrieve using bean name and type of bean as well
+		System.out.println(context.getBean(Address.class));
+
 
 	}
 
